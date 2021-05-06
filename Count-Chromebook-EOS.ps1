@@ -84,12 +84,7 @@ Else {Write-Host "No non-matching data to export!"}
     Sort-Object autoUpdateExpiration, serialNumber |
     Export-Csv "$env:TEMP\Chromebook_OS_EOS 5.csv" -NoType
 
-gam print orgs | Out-File "$env:TEMP\OUs.csv"
-(Import-Csv "$env:TEMP\OUs.csv") |
-    Export-Csv "$env:TEMP\OUs.csv" -NoType
-
 #upload all sheets into one Google sheet, separate tabs.
-gam user fsisd.gam@fsisd.net update drivefile 1-knMcCJFXnHv99EIuCsBsCfz0QGWGcfN5OoPzLNcw7M newfilename "Chromebook OS EOS" localfile "$env:TEMP\Chromebook_OS_EOS 2.csv" csvsheet id:1577232176
-gam user fsisd.gam@fsisd.net update drivefile 1-knMcCJFXnHv99EIuCsBsCfz0QGWGcfN5OoPzLNcw7M newfilename "Chromebook OS EOS" localfile "$env:TEMP\Chromebook_OS_EOS 5.csv" csvsheet id:1113163580
-gam user fsisd.gam@fsisd.net update drivefile 1-knMcCJFXnHv99EIuCsBsCfz0QGWGcfN5OoPzLNcw7M newfilename "Chromebook OS EOS" localfile "$env:TEMP\Chromebook_OS_EOS 4.csv" csvsheet id:950550089
-gam user fsisd.gam@fsisd.net update drivefile 1-knMcCJFXnHv99EIuCsBsCfz0QGWGcfN5OoPzLNcw7M newfilename "Chromebook OS EOS" localfile "$env:TEMP\OUs.csv" csvsheet id:418422209
+gam user fsisd.gam@fsisd.net update drivefile <Drive File ID> newfilename "Chromebook OS EOS" localfile "$env:TEMP\Chromebook_OS_EOS 2.csv" csvsheet id:<Sheet / Tab ID>
+gam user fsisd.gam@fsisd.net update drivefile <Drive File ID> newfilename "Chromebook OS EOS" localfile "$env:TEMP\Chromebook_OS_EOS 5.csv" csvsheet id:<Sheet / Tab ID>
+gam user fsisd.gam@fsisd.net update drivefile <Drive File ID> newfilename "Chromebook OS EOS" localfile "$env:TEMP\Chromebook_OS_EOS 4.csv" csvsheet id:<Sheet / Tab ID>
