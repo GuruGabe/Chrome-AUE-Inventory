@@ -22,3 +22,4 @@ $maploc      = "https://www.google.com/maps/@" + $maplat + "," + $maplon + ",13z
 ```
 Example of my Google Sheet with formulas.
 https://docs.google.com/spreadsheets/d/1jsrWTIpRqWbe54hLfYhPQkojBCzHXrIPuw6IV0qVHG0/edit?usp=sharing
+The "Active" tab is where GAM sends the data and the first tab is my dressed up one for examination.
