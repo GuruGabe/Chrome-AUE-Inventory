@@ -23,3 +23,29 @@ $maploc      = "https://www.google.com/maps/@" + $maplat + "," + $maplon + ",13z
 Example of my Google Sheet with formulas.
 https://docs.google.com/spreadsheets/d/1jsrWTIpRqWbe54hLfYhPQkojBCzHXrIPuw6IV0qVHG0/edit?usp=sharing
 The "Active" tab is where GAM sends the data and the first tab is my dressed up one for examination.
+
+
+Added list of Google OUs
+Added list of staff groups
+Added list of student groups
+Added Chromebook battery health export
+
+To get battery health export, changes must be made in Admin Console
+The settings are located here:
+
+Devices > Chrome > Settings > Devices > Device settings ~ User and device reporting
+
+Report device hardware information
+Navigate to Device settings.
+In the organizational units list, select the OU to apply the setting to. This setting can be set at the Root or for specific OUs.
+Scroll to the User and device reporting section.
+For the Report device Hardware Information setting, select Enable all hardware information reporting.
+Click Save.
+Caution: It is possible to select Customize for the Report device Hardware Information setting. With that selected, you also need to check Power status and Storage status in the customized list.
+
+Report device telemetry
+Navigate to Device settings.
+In the organizational units list, select the OU to apply the setting to. This setting can be set at the Root or for specific OUs.
+Scroll to the User and device reporting section.
+For the Report device telemetry setting, select Enable all telemetry reporting.
+Click Save.
